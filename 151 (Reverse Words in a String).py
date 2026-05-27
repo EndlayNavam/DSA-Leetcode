@@ -1,0 +1,14 @@
+# Input: s = "the sky is blue"
+# Output: "blue is sky the" 
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s = s.strip()
+        s = s.split()
+        s.reverse()
+        s = " ".join(s)
+        return s
+        
+# Strip - Remove space in first and last
+# Split - Convert each word into string and add in the list
+# Then Reverse, and then joining each word string with space in between
